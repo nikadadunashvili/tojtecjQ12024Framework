@@ -1,10 +1,10 @@
 from time import sleep
 from selenium.webdriver.common.by import By
 
-from pageObjects.cartPage import CartPage
-from pageObjects.checkoutPage import CheckoutPage
-from pageObjects.ShopPage import ShopPage
-from utilities.baseClass import BaseClass
+from pythonProject.pageObjects.ShopPage import ShopPage
+from pythonProject.pageObjects.cartPage import CartPage
+from pythonProject.pageObjects.checkoutPage import CheckoutPage
+from pythonProject.utilities.baseClass import BaseClass
 
 
 class TestEndToEnd(BaseClass):
@@ -37,4 +37,5 @@ class TestEndToEnd(BaseClass):
         sleep(2)
         self.driver.find_element(By.XPATH, "//span[text()='Place Order']").click()
         sleep(5)
-        self.driver.quit()
+        print("This is a newly created message for git session")
+        print("New changes by American Timezone guy.")
